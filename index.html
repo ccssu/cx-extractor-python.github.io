@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> cx-extractor-python </title>
+    <link rel="shortcut icon" href="music_ico.ico" type="image/x-icon">
+    <!--Usefull Meta-->
+    <meta name="description" content="基于行块分布函数的通用网页正文抽取算法的Python版本实现">
+    <meta name="keywords" content="cx-extractor-python">
+    <!--Google Fonts-->
+    <link href="static/css/css2.css" rel="stylesheet">
+    <link href="static/css/css21.css" rel="stylesheet">
+    <!--AOS Animation Stylesheet-->
+    <link rel="stylesheet" href="static/css/aos.css">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="static/css/all.min.css">
+    <!--Magnific Popup-->
+    <link rel="stylesheet" href="static/css/magnific-popup.css">
+    <!--OWL Carousel-->
+    <link rel="stylesheet" href="static/css/owl.carousel.min.css">
+    <!--Keyden Styelsheet with Bootstrap 5-->
+    <link rel="stylesheet" href="static/css/kayden_1.css">
+    <!-- 引入iconfont -->
+    <link rel="stylesheet" href="static/css/icon-css/iconfont.css">
+    <link rel="stylesheet" href="static/css/icon-css2/iconfont.css">
+  </head>
+
+  <body data-offset="102">
+    <!--PRELOADER START-->
+    <div id="preloader">
+      <div class="text-center w-100">
+        <div class="loader">
+        </div>
+      </div>
+    </div>
+    <!--PRELOADER END-->
+
+    <!--Header START-->
+    <header class="kayden-header sticky-top">
+      <div class="header-inside transparent_header">
+        <div class="d-flex flex-row justify-content-between align-items-center">
+          <!--Header Toggler START-->
+          <div class="kayden-menu-toggler"><a class="kayden-toggler text-reset"
+              data-bs-toggle="offcanvas"
+              href="#kaydenOffCanvas" role="button"
+              aria-controls="kaydenOffCanvas">
+              <div class="kt-r"><span></span><span></span><span></span></div>
+              <div class="kt-t"> 菜单 </div>
+            </a></div>
+          <!--Header Toggler END--><!--Header Logo START-->
+          <!-- <div class="kayden-logo">
+            <a href="#">
+              <img src="static/picture/logo.svg" height="30" alt="kayden">
+            </a>
+          </div> -->
+          <!--Header Logo END--><!--Header Info START-->
+          <div class="kayden-nav-meta fs-5 fw-bold d-none d-sm-block text-end">
+            <a href="#" class="text-reset">cx-extractor-python</a>
+          </div>
+          <!--Header Info END-->
+        </div>
+      </div>
+    </header>
+    <!--Header END--><!--Off Canvas START-->
+    <div class="offcanvas offcanvas-start" id="kaydenOffCanvas">
+      <!--Off Canvas Header START-->
+      <div class="offcanvas-header">
+        <button type="button" class="btn-close text-reset"
+          data-bs-dismiss="offcanvas" aria-label="Close"><i
+            class="fas fa-times"></i></button>
+      </div>
+      <!--Off Canvas Header END--><!--Off Canvas Body START-->
+      <div class="offcanvas-body">
+        <div
+          class="kayden-offcanvas-nav-container d-flex flex-column justify-content-center align-items-center">
+          <!--Off Canvas Navigation START-->
+          <ul class="kayden-offcanvas-nav list-inline">
+            <li class="py-3"><a href="#home"
+                class="kayden_scrollspy underline_animation underline_text text-reset fs-4 fw-bold"
+                data-bs-dismiss="offcanvas">Home</a></li>
+            <li class="py-3"><a href="#about"
+                class="kayden_scrollspy underline_animation underline_text text-reset fs-4 fw-bold"
+                data-bs-dismiss="offcanvas">中文测试</a></li>
+            <li class="py-3"><a href="#services"
+                class="kayden_scrollspy underline_animation underline_text text-reset fs-4 fw-bold"
+                data-bs-dismiss="offcanvas">英文测试</a></li>
+            <li class="py-3"><a href="#portfolio"
+                class="kayden_scrollspy underline_animation underline_text text-reset fs-4 fw-bold"
+                data-bs-dismiss="offcanvas">性能评估</a></li>
+            <!-- <li class="py-3"><a href="#contact"
+                class="kayden_scrollspy underline_animation underline_text text-reset fs-4 fw-bold"
+                data-bs-dismiss="offcanvas">联系我</a></li> -->
+          </ul>
+          <!--Off Canvas Navigation END-->
+        </div>
+      </div>
+      <!--Off Canvas Body END-->
+    </div>
+    <!--Off Canvas END--><!--Home Section START-->
+    <section id="home" class="home vh-100"><!--Home Background START-->
+      <div class="home-background position-absolute top-0 start-0 w-100 h-100"><img
+          src="static/picture/home.jpg"
+          data-aos="fade-up" data-aos-duration="1000" alt="home"
+          class="w-100 h-100 fit-cover fit-left-top"></div>
+      <!--Home Background END--><!--Home Container START-->
+      <div class="container h-100 position-relative">
+        <div
+          class="home-details text-center text-sm-end w-100 h-100 d-flex align-items-center">
+          <div class="home-details-inner w-100">
+            <p class="welcome_text fs-4" data-aos="fade-up"
+              data-aos-duration="800" data-aos-delay="500"><span
+                class="typed_text"
+                data-options="基于行块分布函数的通用网页正文抽取算法的Python版本实现 注意：这个方法只适用于有大段正文的中文网页，例如新闻、博客，不适用于微博、贴吧等等。"></span></p>
+            <h1
+              class="fs-1 fw-bold  kayden-underline-center kayden-underline-sm-right kayden-underline-big d-inline-block"
+              data-aos="fade-up" data-aos-duration="800" data-aos-delay="800">cx-extractor-python</h1>
+          </div>
+        </div>
+      </div>
+      <!--Home Container END-->
+      <!--Scroll Down START-->
+      <div class="scroll-down"> <a href="#about"
+          class="kayden_scrollspy scroll-down-link text-center">
+          <div class="scroll-title">下滑浏览</div>
+          <div class="scroll-mouse">
+            <div class="whell"></div>
+          </div>
+        </a> </div>
+      <!--Scroll Down END-->
+    </section>
+    <!--Home Section END-->
+
+    <!--About Section START-->
+    <section id="about" class="min-vh-100">
+
+      <div class="container h-100">
+        <div
+          class="about_inside w-100 h-100 d-flex justify-content-center align-items-center">
+          <div class="row w-100">
+            <!--About Section Picture START-->
+            <div class="offset-md-1 col-md-4">
+              <p><a href="RawHtml/1.html" target="_blank" rel="noopener">RawHtml/1.html</a></p>
+              <p><a href="Text/1.txt" target="_blank" rel="noopener">Text/1.txt</a></p>
+              <p><a href="RawHtml/10.html" target="_blank" rel="noopener">RawHtml/10.html</a></p>
+              <p><a href="Text/10.txt" target="_blank" rel="noopener">Text/10.txt</a></p>
+              <p><a href="RawHtml/11.html" target="_blank" rel="noopener">RawHtml/11.html</a></p>
+              <p><a href="Text/11.txt" target="_blank" rel="noopener">Text/11.txt</a></p>
+              <p><a href="RawHtml/12.html" target="_blank" rel="noopener">RawHtml/12.html</a></p>
+              <p><a href="Text/12.txt" target="_blank" rel="noopener">Text/12.txt</a></p>
+              <p><a href="RawHtml/13.html" target="_blank" rel="noopener">RawHtml/13.html</a></p>
+              <p><a href="Text/13.txt" target="_blank" rel="noopener">Text/13.txt</a></p>
+              <p><a href="RawHtml/14.html" target="_blank" rel="noopener">RawHtml/14.html</a></p>
+              <p><a href="Text/14.txt" target="_blank" rel="noopener">Text/14.txt</a></p>
+              <p><a href="RawHtml/15.html" target="_blank" rel="noopener">RawHtml/15.html</a></p>
+              <p><a href="Text/15.txt" target="_blank" rel="noopener">Text/15.txt</a></p>
+              <p><a href="RawHtml/16.html" target="_blank" rel="noopener">RawHtml/16.html</a></p>
+              <p><a href="Text/16.txt" target="_blank" rel="noopener">Text/16.txt</a></p>
+              <p><a href="RawHtml/17.html" target="_blank" rel="noopener">RawHtml/17.html</a></p>
+              <p><a href="Text/17.txt" target="_blank" rel="noopener">Text/17.txt</a></p>
+              <p><a href="RawHtml/18.html" target="_blank" rel="noopener">RawHtml/18.html</a></p>
+              <p><a href="Text/18.txt" target="_blank" rel="noopener">Text/18.txt</a></p>
+              <p><a href="RawHtml/19.html" target="_blank" rel="noopener">RawHtml/19.html</a></p>
+              <p><a href="Text/19.txt" target="_blank" rel="noopener">Text/19.txt</a></p>
+              <p><a href="RawHtml/2.html" target="_blank" rel="noopener">RawHtml/2.html</a></p>
+              <p><a href="Text/2.txt" target="_blank" rel="noopener">Text/2.txt</a></p>
+              <p><a href="RawHtml/20.html" target="_blank" rel="noopener">RawHtml/20.html</a></p>
+              <p><a href="Text/20.txt" target="_blank" rel="noopener">Text/20.txt</a></p>
+              <p><a href="RawHtml/21.html" target="_blank" rel="noopener">RawHtml/21.html</a></p>
+              <p><a href="Text/21.txt" target="_blank" rel="noopener">Text/21.txt</a></p>
+              <p><a href="RawHtml/22.html" target="_blank" rel="noopener">RawHtml/22.html</a></p>
+              <p><a href="Text/22.txt" target="_blank" rel="noopener">Text/22.txt</a></p>
+              <p><a href="RawHtml/23.html" target="_blank" rel="noopener">RawHtml/23.html</a></p>
+              <p><a href="Text/23.txt" target="_blank" rel="noopener">Text/23.txt</a></p>
+              <p><a href="RawHtml/24.html" target="_blank" rel="noopener">RawHtml/24.html</a></p>
+              <p><a href="Text/24.txt" target="_blank" rel="noopener">Text/24.txt</a></p>
+              <p><a href="RawHtml/25.html" target="_blank" rel="noopener">RawHtml/25.html</a></p>
+              <p><a href="Text/25.txt" target="_blank" rel="noopener">Text/25.txt</a></p>
+              <p><a href="RawHtml/26.html" target="_blank" rel="noopener">RawHtml/26.html</a></p>
+              <p><a href="Text/26.txt" target="_blank" rel="noopener">Text/26.txt</a></p>
+              <p><a href="RawHtml/27.html" target="_blank" rel="noopener">RawHtml/27.html</a></p>
+              <p><a href="Text/27.txt" target="_blank" rel="noopener">Text/27.txt</a></p>
+              <p><a href="RawHtml/28.html" target="_blank" rel="noopener">RawHtml/28.html</a></p>
+              <p><a href="Text/28.txt" target="_blank" rel="noopener">Text/28.txt</a></p>
+              <p><a href="RawHtml/29.html" target="_blank" rel="noopener">RawHtml/29.html</a></p>
+              <p><a href="Text/29.txt" target="_blank" rel="noopener">Text/29.txt</a></p>
+              <p><a href="RawHtml/3.html" target="_blank" rel="noopener">RawHtml/3.html</a></p>
+              <p><a href="Text/3.txt" target="_blank" rel="noopener">Text/3.txt</a></p>
+              <p><a href="RawHtml/30.html" target="_blank" rel="noopener">RawHtml/30.html</a></p>
+              <p><a href="Text/30.txt" target="_blank" rel="noopener">Text/30.txt</a></p>
+              <p><a href="RawHtml/31.html" target="_blank" rel="noopener">RawHtml/31.html</a></p>
+              <p><a href="Text/31.txt" target="_blank" rel="noopener">Text/31.txt</a></p>
+              <p><a href="RawHtml/32.html" target="_blank" rel="noopener">RawHtml/32.html</a></p>
+              <p><a href="Text/32.txt" target="_blank" rel="noopener">Text/32.txt</a></p>
+              <p><a href="RawHtml/33.html" target="_blank" rel="noopener">RawHtml/33.html</a></p>
+              <p><a href="Text/33.txt" target="_blank" rel="noopener">Text/33.txt</a></p>
+              <p><a href="RawHtml/34.html" target="_blank" rel="noopener">RawHtml/34.html</a></p>
+              <p><a href="Text/34.txt" target="_blank" rel="noopener">Text/34.txt</a></p>
+              <p><a href="RawHtml/35.html" target="_blank" rel="noopener">RawHtml/35.html</a></p>
+              <p><a href="Text/35.txt" target="_blank" rel="noopener">Text/35.txt</a></p>
+              <p><a href="RawHtml/36.html" target="_blank" rel="noopener">RawHtml/36.html</a></p>
+              <p><a href="Text/36.txt" target="_blank" rel="noopener">Text/36.txt</a></p>
+              <p><a href="RawHtml/37.html" target="_blank" rel="noopener">RawHtml/37.html</a></p>
+              <p><a href="Text/37.txt" target="_blank" rel="noopener">Text/37.txt</a></p>
+              <p><a href="RawHtml/38.html" target="_blank" rel="noopener">RawHtml/38.html</a></p>
+              <p><a href="Text/38.txt" target="_blank" rel="noopener">Text/38.txt</a></p>
+              <p><a href="RawHtml/39.html" target="_blank" rel="noopener">RawHtml/39.html</a></p>
+              <p><a href="Text/39.txt" target="_blank" rel="noopener">Text/39.txt</a></p>
+              <p><a href="RawHtml/4.html" target="_blank" rel="noopener">RawHtml/4.html</a></p>
+              <p><a href="Text/4.txt" target="_blank" rel="noopener">Text/4.txt</a></p>
+              <p><a href="RawHtml/40.html" target="_blank" rel="noopener">RawHtml/40.html</a></p>
+              <p><a href="Text/40.txt" target="_blank" rel="noopener">Text/40.txt</a></p>
+              <p><a href="RawHtml/41.html" target="_blank" rel="noopener">RawHtml/41.html</a></p>
+              <p><a href="Text/41.txt" target="_blank" rel="noopener">Text/41.txt</a></p>
+              <p><a href="RawHtml/42.html" target="_blank" rel="noopener">RawHtml/42.html</a></p>
+              <p><a href="Text/42.txt" target="_blank" rel="noopener">Text/42.txt</a></p>
+              <p><a href="RawHtml/43.html" target="_blank" rel="noopener">RawHtml/43.html</a></p>
+              <p><a href="Text/43.txt" target="_blank" rel="noopener">Text/43.txt</a></p>
+              <p><a href="RawHtml/44.html" target="_blank" rel="noopener">RawHtml/44.html</a></p>
+              <p><a href="Text/44.txt" target="_blank" rel="noopener">Text/44.txt</a></p>
+              <p><a href="RawHtml/45.html" target="_blank" rel="noopener">RawHtml/45.html</a></p>
+              <p><a href="Text/45.txt" target="_blank" rel="noopener">Text/45.txt</a></p>
+              <p><a href="RawHtml/46.html" target="_blank" rel="noopener">RawHtml/46.html</a></p>
+              <p><a href="Text/46.txt" target="_blank" rel="noopener">Text/46.txt</a></p>
+              <p><a href="RawHtml/47.html" target="_blank" rel="noopener">RawHtml/47.html</a></p>
+              <p><a href="Text/47.txt" target="_blank" rel="noopener">Text/47.txt</a></p>
+              <p><a href="RawHtml/48.html" target="_blank" rel="noopener">RawHtml/48.html</a></p>
+              <p><a href="Text/48.txt" target="_blank" rel="noopener">Text/48.txt</a></p>
+              <p><a href="RawHtml/49.html" target="_blank" rel="noopener">RawHtml/49.html</a></p>
+              <p><a href="Text/49.txt" target="_blank" rel="noopener">Text/49.txt</a></p>
+              <p><a href="RawHtml/5.html" target="_blank" rel="noopener">RawHtml/5.html</a></p>
+              <p><a href="Text/5.txt" target="_blank" rel="noopener">Text/5.txt</a></p>
+              <p><a href="RawHtml/50.html" target="_blank" rel="noopener">RawHtml/50.html</a></p>
+              <p><a href="Text/50.txt" target="_blank" rel="noopener">Text/50.txt</a></p>
+              <p><a href="RawHtml/51.html" target="_blank" rel="noopener">RawHtml/51.html</a></p>
+              <p><a href="Text/51.txt" target="_blank" rel="noopener">Text/51.txt</a></p>
+              <p><a href="RawHtml/52.html" target="_blank" rel="noopener">RawHtml/52.html</a></p>
+              <p><a href="Text/52.txt" target="_blank" rel="noopener">Text/52.txt</a></p>
+              <p><a href="RawHtml/53.html" target="_blank" rel="noopener">RawHtml/53.html</a></p>
+              <p><a href="Text/53.txt" target="_blank" rel="noopener">Text/53.txt</a></p>
+              <p><a href="RawHtml/54.html" target="_blank" rel="noopener">RawHtml/54.html</a></p>
+              <p><a href="Text/54.txt" target="_blank" rel="noopener">Text/54.txt</a></p>
+              <p><a href="RawHtml/55.html" target="_blank" rel="noopener">RawHtml/55.html</a></p>
+              <p><a href="Text/55.txt" target="_blank" rel="noopener">Text/55.txt</a></p>
+              <p><a href="RawHtml/56.html" target="_blank" rel="noopener">RawHtml/56.html</a></p>
+              <p><a href="Text/56.txt" target="_blank" rel="noopener">Text/56.txt</a></p>
+              <p><a href="RawHtml/57.html" target="_blank" rel="noopener">RawHtml/57.html</a></p>
+              <p><a href="Text/57.txt" target="_blank" rel="noopener">Text/57.txt</a></p>
+              <p><a href="RawHtml/58.html" target="_blank" rel="noopener">RawHtml/58.html</a></p>
+              <p><a href="Text/58.txt" target="_blank" rel="noopener">Text/58.txt</a></p>
+              <p><a href="RawHtml/59.html" target="_blank" rel="noopener">RawHtml/59.html</a></p>
+              <p><a href="Text/59.txt" target="_blank" rel="noopener">Text/59.txt</a></p>
+              <p><a href="RawHtml/6.html" target="_blank" rel="noopener">RawHtml/6.html</a></p>
+              <p><a href="Text/6.txt" target="_blank" rel="noopener">Text/6.txt</a></p>
+              <p><a href="RawHtml/60.html" target="_blank" rel="noopener">RawHtml/60.html</a></p>
+              <p><a href="Text/60.txt" target="_blank" rel="noopener">Text/60.txt</a></p>
+              <p><a href="RawHtml/61.html" target="_blank" rel="noopener">RawHtml/61.html</a></p>
+              <p><a href="Text/61.txt" target="_blank" rel="noopener">Text/61.txt</a></p>
+              <p><a href="RawHtml/62.html" target="_blank" rel="noopener">RawHtml/62.html</a></p>
+              <p><a href="Text/62.txt" target="_blank" rel="noopener">Text/62.txt</a></p>
+              <p><a href="RawHtml/63.html" target="_blank" rel="noopener">RawHtml/63.html</a></p>
+              <p><a href="Text/63.txt" target="_blank" rel="noopener">Text/63.txt</a></p>
+              <p><a href="RawHtml/64.html" target="_blank" rel="noopener">RawHtml/64.html</a></p>
+              <p><a href="Text/64.txt" target="_blank" rel="noopener">Text/64.txt</a></p>
+              <p><a href="RawHtml/65.html" target="_blank" rel="noopener">RawHtml/65.html</a></p>
+              <p><a href="Text/65.txt" target="_blank" rel="noopener">Text/65.txt</a></p>
+              <p><a href="RawHtml/66.html" target="_blank" rel="noopener">RawHtml/66.html</a></p>
+              <p><a href="Text/66.txt" target="_blank" rel="noopener">Text/66.txt</a></p>
+              <p><a href="RawHtml/67.html" target="_blank" rel="noopener">RawHtml/67.html</a></p>
+              <p><a href="Text/67.txt" target="_blank" rel="noopener">Text/67.txt</a></p>
+              <p><a href="RawHtml/68.html" target="_blank" rel="noopener">RawHtml/68.html</a></p>
+              <p><a href="Text/68.txt" target="_blank" rel="noopener">Text/68.txt</a></p>
+              <p><a href="RawHtml/69.html" target="_blank" rel="noopener">RawHtml/69.html</a></p>
+              <p><a href="Text/69.txt" target="_blank" rel="noopener">Text/69.txt</a></p>
+              <p><a href="RawHtml/7.html" target="_blank" rel="noopener">RawHtml/7.html</a></p>
+              <p><a href="Text/7.txt" target="_blank" rel="noopener">Text/7.txt</a></p>
+              <p><a href="RawHtml/70.html" target="_blank" rel="noopener">RawHtml/70.html</a></p>
+              <p><a href="Text/70.txt" target="_blank" rel="noopener">Text/70.txt</a></p>
+              <p><a href="RawHtml/71.html" target="_blank" rel="noopener">RawHtml/71.html</a></p>
+              <p><a href="Text/71.txt" target="_blank" rel="noopener">Text/71.txt</a></p>
+              <p><a href="RawHtml/72.html" target="_blank" rel="noopener">RawHtml/72.html</a></p>
+              <p><a href="Text/72.txt" target="_blank" rel="noopener">Text/72.txt</a></p>
+              <p><a href="RawHtml/73.html" target="_blank" rel="noopener">RawHtml/73.html</a></p>
+              <p><a href="Text/73.txt" target="_blank" rel="noopener">Text/73.txt</a></p>
+              <p><a href="RawHtml/74.html" target="_blank" rel="noopener">RawHtml/74.html</a></p>
+              <p><a href="Text/74.txt" target="_blank" rel="noopener">Text/74.txt</a></p>
+              <p><a href="RawHtml/8.html" target="_blank" rel="noopener">RawHtml/8.html</a></p>
+              <p><a href="Text/8.txt" target="_blank" rel="noopener">Text/8.txt</a></p>
+              <p><a href="RawHtml/9.html" target="_blank" rel="noopener">RawHtml/9.html</a></p>
+              <p><a href="Text/9.txt" target="_blank" rel="noopener">Text/9.txt</a></p>
+
+            </div>
+            <!--About Section Picture END-->
+            <!--About Section Details START-->
+            <div class="offset-md-1 col-md-6 mt-5 mt-md-0">
+              <p><a href="bbcnews-html/business-27107354.html" target="_blank"
+                  rel="noopener">bbcnews-html/business-27107354.html</a></p>
+              <p><a href="bbcnews-text/business-27107354.txt" target="_blank"
+                  rel="noopener">bbcnews-text/business-27107354.txt</a></p>
+              <p><a href="bbcnews-html/business-32498715.html" target="_blank"
+                  rel="noopener">bbcnews-html/business-32498715.html</a></p>
+              <p><a href="bbcnews-text/business-32498715.txt" target="_blank"
+                  rel="noopener">bbcnews-text/business-32498715.txt</a></p>
+              <p><a href="bbcnews-html/business-35285852.html" target="_blank"
+                  rel="noopener">bbcnews-html/business-35285852.html</a></p>
+              <p><a href="bbcnews-text/business-35285852.txt" target="_blank"
+                  rel="noopener">bbcnews-text/business-35285852.txt</a></p>
+              <p><a href="bbcnews-html/business-38632145.html" target="_blank"
+                  rel="noopener">bbcnews-html/business-38632145.html</a></p>
+              <p><a href="bbcnews-text/business-38632145.txt" target="_blank"
+                  rel="noopener">bbcnews-text/business-38632145.txt</a></p>
+              <p><a href="bbcnews-html/business-38646804.html" target="_blank"
+                  rel="noopener">bbcnews-html/business-38646804.html</a></p>
+              <p><a href="bbcnews-text/business-38646804.txt" target="_blank"
+                  rel="noopener">bbcnews-text/business-38646804.txt</a></p>
+              <p><a href="bbcnews-html/business-38651816.html" target="_blank"
+                  rel="noopener">bbcnews-html/business-38651816.html</a></p>
+              <p><a href="bbcnews-text/business-38651816.txt" target="_blank"
+                  rel="noopener">bbcnews-text/business-38651816.txt</a></p>
+              <p><a href="bbcnews-html/business-38728059.html" target="_blank"
+                  rel="noopener">bbcnews-html/business-38728059.html</a></p>
+              <p><a href="bbcnews-text/business-38728059.txt" target="_blank"
+                  rel="noopener">bbcnews-text/business-38728059.txt</a></p>
+              <p><a href="bbcnews-html/election-us-2016-37917345.html"
+                  target="_blank" rel="noopener">bbcnews-html/election-us-2016-37917345.html</a></p>
+              <p><a href="bbcnews-text/election-us-2016-37917345.txt"
+                  target="_blank" rel="noopener">bbcnews-text/election-us-2016-37917345.txt</a></p>
+              <p><a href="bbcnews-html/election-us-2016-37918304.html"
+                  target="_blank" rel="noopener">bbcnews-html/election-us-2016-37918304.html</a></p>
+              <p><a href="bbcnews-text/election-us-2016-37918304.txt"
+                  target="_blank" rel="noopener">bbcnews-text/election-us-2016-37918304.txt</a></p>
+              <p><a href="bbcnews-html/election-us-2016-37918972.html"
+                  target="_blank" rel="noopener">bbcnews-html/election-us-2016-37918972.html</a></p>
+              <p><a href="bbcnews-text/election-us-2016-37918972.txt"
+                  target="_blank" rel="noopener">bbcnews-text/election-us-2016-37918972.txt</a></p>
+              <p><a href="bbcnews-html/election-us-2016-37924747.html"
+                  target="_blank" rel="noopener">bbcnews-html/election-us-2016-37924747.html</a></p>
+              <p><a href="bbcnews-text/election-us-2016-37924747.txt"
+                  target="_blank" rel="noopener">bbcnews-text/election-us-2016-37924747.txt</a></p>
+              <p><a href="bbcnews-html/election-us-2016-37928171.html"
+                  target="_blank" rel="noopener">bbcnews-html/election-us-2016-37928171.html</a></p>
+              <p><a href="bbcnews-text/election-us-2016-37928171.txt"
+                  target="_blank" rel="noopener">bbcnews-text/election-us-2016-37928171.txt</a></p>
+              <p><a href="bbcnews-html/election-us-2016-37930473.html"
+                  target="_blank" rel="noopener">bbcnews-html/election-us-2016-37930473.html</a></p>
+              <p><a href="bbcnews-text/election-us-2016-37930473.txt"
+                  target="_blank" rel="noopener">bbcnews-text/election-us-2016-37930473.txt</a></p>
+              <p><a href="bbcnews-html/health-38157770.html" target="_blank"
+                  rel="noopener">bbcnews-html/health-38157770.html</a></p>
+              <p><a href="bbcnews-text/health-38157770.txt" target="_blank"
+                  rel="noopener">bbcnews-text/health-38157770.txt</a></p>
+              <p><a href="bbcnews-html/health-38312995.html" target="_blank"
+                  rel="noopener">bbcnews-html/health-38312995.html</a></p>
+              <p><a href="bbcnews-text/health-38312995.txt" target="_blank"
+                  rel="noopener">bbcnews-text/health-38312995.txt</a></p>
+              <p><a href="bbcnews-html/health-38323184.html" target="_blank"
+                  rel="noopener">bbcnews-html/health-38323184.html</a></p>
+              <p><a href="bbcnews-text/health-38323184.txt" target="_blank"
+                  rel="noopener">bbcnews-text/health-38323184.txt</a></p>
+              <p><a href="bbcnews-html/health-38500873.html" target="_blank"
+                  rel="noopener">bbcnews-html/health-38500873.html</a></p>
+              <p><a href="bbcnews-text/health-38500873.txt" target="_blank"
+                  rel="noopener">bbcnews-text/health-38500873.txt</a></p>
+              <p><a href="bbcnews-html/health-38603484.html" target="_blank"
+                  rel="noopener">bbcnews-html/health-38603484.html</a></p>
+              <p><a href="bbcnews-text/health-38603484.txt" target="_blank"
+                  rel="noopener">bbcnews-text/health-38603484.txt</a></p>
+              <p><a href="bbcnews-html/health-38691622.html" target="_blank"
+                  rel="noopener">bbcnews-html/health-38691622.html</a></p>
+              <p><a href="bbcnews-text/health-38691622.txt" target="_blank"
+                  rel="noopener">bbcnews-text/health-38691622.txt</a></p>
+              <p><a href="bbcnews-html/health-38691623.html" target="_blank"
+                  rel="noopener">bbcnews-html/health-38691623.html</a></p>
+              <p><a href="bbcnews-text/health-38691623.txt" target="_blank"
+                  rel="noopener">bbcnews-text/health-38691623.txt</a></p>
+              <p><a href="bbcnews-html/health-38887694.html" target="_blank"
+                  rel="noopener">bbcnews-html/health-38887694.html</a></p>
+              <p><a href="bbcnews-text/health-38887694.txt" target="_blank"
+                  rel="noopener">bbcnews-text/health-38887694.txt</a></p>
+              <p><a href="bbcnews-html/health-38918056.html" target="_blank"
+                  rel="noopener">bbcnews-html/health-38918056.html</a></p>
+              <p><a href="bbcnews-text/health-38918056.txt" target="_blank"
+                  rel="noopener">bbcnews-text/health-38918056.txt</a></p>
+              <p><a href="bbcnews-html/health-39043387.html" target="_blank"
+                  rel="noopener">bbcnews-html/health-39043387.html</a></p>
+              <p><a href="bbcnews-text/health-39043387.txt" target="_blank"
+                  rel="noopener">bbcnews-text/health-39043387.txt</a></p>
+              <p><a href="bbcnews-html/health-39207593.html" target="_blank"
+                  rel="noopener">bbcnews-html/health-39207593.html</a></p>
+              <p><a href="bbcnews-text/health-39207593.txt" target="_blank"
+                  rel="noopener">bbcnews-text/health-39207593.txt</a></p>
+              <p><a href="bbcnews-html/health-39341411.html" target="_blank"
+                  rel="noopener">bbcnews-html/health-39341411.html</a></p>
+              <p><a href="bbcnews-text/health-39341411.txt" target="_blank"
+                  rel="noopener">bbcnews-text/health-39341411.txt</a></p>
+              <p><a href="bbcnews-html/health-40554462.html" target="_blank"
+                  rel="noopener">bbcnews-html/health-40554462.html</a></p>
+              <p><a href="bbcnews-text/health-40554462.txt" target="_blank"
+                  rel="noopener">bbcnews-text/health-40554462.txt</a></p>
+              <p><a href="bbcnews-html/health-40644896.html" target="_blank"
+                  rel="noopener">bbcnews-html/health-40644896.html</a></p>
+              <p><a href="bbcnews-text/health-40644896.txt" target="_blank"
+                  rel="noopener">bbcnews-text/health-40644896.txt</a></p>
+              <p><a href="bbcnews-html/health-40752061.html" target="_blank"
+                  rel="noopener">bbcnews-html/health-40752061.html</a></p>
+              <p><a href="bbcnews-text/health-40752061.txt" target="_blank"
+                  rel="noopener">bbcnews-text/health-40752061.txt</a></p>
+              <p><a href="bbcnews-html/magazine-18120921.html" target="_blank"
+                  rel="noopener">bbcnews-html/magazine-18120921.html</a></p>
+              <p><a href="bbcnews-text/magazine-18120921.txt" target="_blank"
+                  rel="noopener">bbcnews-text/magazine-18120921.txt</a></p>
+              <p><a href="bbcnews-html/magazine-19648095.html" target="_blank"
+                  rel="noopener">bbcnews-html/magazine-19648095.html</a></p>
+              <p><a href="bbcnews-text/magazine-19648095.txt" target="_blank"
+                  rel="noopener">bbcnews-text/magazine-19648095.txt</a></p>
+              <p><a href="bbcnews-html/magazine-35031313.html" target="_blank"
+                  rel="noopener">bbcnews-html/magazine-35031313.html</a></p>
+              <p><a href="bbcnews-text/magazine-35031313.txt" target="_blank"
+                  rel="noopener">bbcnews-text/magazine-35031313.txt</a></p>
+              <p><a href="bbcnews-html/magazine-35382599.html" target="_blank"
+                  rel="noopener">bbcnews-html/magazine-35382599.html</a></p>
+              <p><a href="bbcnews-text/magazine-35382599.txt" target="_blank"
+                  rel="noopener">bbcnews-text/magazine-35382599.txt</a></p>
+              <p><a href="bbcnews-html/magazine-35406324.html" target="_blank"
+                  rel="noopener">bbcnews-html/magazine-35406324.html</a></p>
+              <p><a href="bbcnews-text/magazine-35406324.txt" target="_blank"
+                  rel="noopener">bbcnews-text/magazine-35406324.txt</a></p>
+              <p><a href="bbcnews-html/magazine-35980195.html" target="_blank"
+                  rel="noopener">bbcnews-html/magazine-35980195.html</a></p>
+              <p><a href="bbcnews-text/magazine-35980195.txt" target="_blank"
+                  rel="noopener">bbcnews-text/magazine-35980195.txt</a></p>
+              <p><a href="bbcnews-html/magazine-36992955.html" target="_blank"
+                  rel="noopener">bbcnews-html/magazine-36992955.html</a></p>
+              <p><a href="bbcnews-text/magazine-36992955.txt" target="_blank"
+                  rel="noopener">bbcnews-text/magazine-36992955.txt</a></p>
+              <p><a href="bbcnews-html/magazine-38405699.html" target="_blank"
+                  rel="noopener">bbcnews-html/magazine-38405699.html</a></p>
+              <p><a href="bbcnews-text/magazine-38405699.txt" target="_blank"
+                  rel="noopener">bbcnews-text/magazine-38405699.txt</a></p>
+              <p><a href="bbcnews-html/science-environment-16109449.html"
+                  target="_blank" rel="noopener">bbcnews-html/science-environment-16109449.html</a></p>
+              <p><a href="bbcnews-text/science-environment-16109449.txt"
+                  target="_blank" rel="noopener">bbcnews-text/science-environment-16109449.txt</a></p>
+              <p><a href="bbcnews-html/science-environment-18870315.html"
+                  target="_blank" rel="noopener">bbcnews-html/science-environment-18870315.html</a></p>
+              <p><a href="bbcnews-text/science-environment-18870315.txt"
+                  target="_blank" rel="noopener">bbcnews-text/science-environment-18870315.txt</a></p>
+              <p><a href="bbcnews-html/science-environment-18911906.html"
+                  target="_blank" rel="noopener">bbcnews-html/science-environment-18911906.html</a></p>
+              <p><a href="bbcnews-text/science-environment-18911906.txt"
+                  target="_blank" rel="noopener">bbcnews-text/science-environment-18911906.txt</a></p>
+              <p><a href="bbcnews-html/science-environment-38034165.html"
+                  target="_blank" rel="noopener">bbcnews-html/science-environment-38034165.html</a></p>
+              <p><a href="bbcnews-text/science-environment-38034165.txt"
+                  target="_blank" rel="noopener">bbcnews-text/science-environment-38034165.txt</a></p>
+              <p><a href="bbcnews-html/science-environment-38249208.html"
+                  target="_blank" rel="noopener">bbcnews-html/science-environment-38249208.html</a></p>
+              <p><a href="bbcnews-text/science-environment-38249208.txt"
+                  target="_blank" rel="noopener">bbcnews-text/science-environment-38249208.txt</a></p>
+              <p><a href="bbcnews-html/science-environment-38303209.html"
+                  target="_blank" rel="noopener">bbcnews-html/science-environment-38303209.html</a></p>
+              <p><a href="bbcnews-text/science-environment-38303209.txt"
+                  target="_blank" rel="noopener">bbcnews-text/science-environment-38303209.txt</a></p>
+              <p><a href="bbcnews-html/science-environment-39304098.html"
+                  target="_blank" rel="noopener">bbcnews-html/science-environment-39304098.html</a></p>
+              <p><a href="bbcnews-text/science-environment-39304098.txt"
+                  target="_blank" rel="noopener">bbcnews-text/science-environment-39304098.txt</a></p>
+              <p><a href="bbcnews-html/science-environment-40128046.html"
+                  target="_blank" rel="noopener">bbcnews-html/science-environment-40128046.html</a></p>
+              <p><a href="bbcnews-text/science-environment-40128046.txt"
+                  target="_blank" rel="noopener">bbcnews-text/science-environment-40128046.txt</a></p>
+              <p><a href="bbcnews-html/science-environment-40675444.html"
+                  target="_blank" rel="noopener">bbcnews-html/science-environment-40675444.html</a></p>
+              <p><a href="bbcnews-text/science-environment-40675444.txt"
+                  target="_blank" rel="noopener">bbcnews-text/science-environment-40675444.txt</a></p>
+              <p><a href="bbcnews-html/uk-northern-ireland-39407902.html"
+                  target="_blank" rel="noopener">bbcnews-html/uk-northern-ireland-39407902.html</a></p>
+              <p><a href="bbcnews-text/uk-northern-ireland-39407902.txt"
+                  target="_blank" rel="noopener">bbcnews-text/uk-northern-ireland-39407902.txt</a></p>
+              <p><a href="bbcnews-html/uk-northern-ireland-39854102.html"
+                  target="_blank" rel="noopener">bbcnews-html/uk-northern-ireland-39854102.html</a></p>
+              <p><a href="bbcnews-text/uk-northern-ireland-39854102.txt"
+                  target="_blank" rel="noopener">bbcnews-text/uk-northern-ireland-39854102.txt</a></p>
+              <p><a href="bbcnews-html/uk-northern-ireland-40161484.html"
+                  target="_blank" rel="noopener">bbcnews-html/uk-northern-ireland-40161484.html</a></p>
+              <p><a href="bbcnews-text/uk-northern-ireland-40161484.txt"
+                  target="_blank" rel="noopener">bbcnews-text/uk-northern-ireland-40161484.txt</a></p>
+              <p><a href="bbcnews-html/uk-northern-ireland-40239671.html"
+                  target="_blank" rel="noopener">bbcnews-html/uk-northern-ireland-40239671.html</a></p>
+              <p><a href="bbcnews-text/uk-northern-ireland-40239671.txt"
+                  target="_blank" rel="noopener">bbcnews-text/uk-northern-ireland-40239671.txt</a></p>
+              <p><a href="bbcnews-html/uk-northern-ireland-40342107.html"
+                  target="_blank" rel="noopener">bbcnews-html/uk-northern-ireland-40342107.html</a></p>
+              <p><a href="bbcnews-text/uk-northern-ireland-40342107.txt"
+                  target="_blank" rel="noopener">bbcnews-text/uk-northern-ireland-40342107.txt</a></p>
+              <p><a href="bbcnews-html/uk-northern-ireland-40402184.html"
+                  target="_blank" rel="noopener">bbcnews-html/uk-northern-ireland-40402184.html</a></p>
+              <p><a href="bbcnews-text/uk-northern-ireland-40402184.txt"
+                  target="_blank" rel="noopener">bbcnews-text/uk-northern-ireland-40402184.txt</a></p>
+              <p><a href="bbcnews-html/uk-northern-ireland-40429507.html"
+                  target="_blank" rel="noopener">bbcnews-html/uk-northern-ireland-40429507.html</a></p>
+              <p><a href="bbcnews-text/uk-northern-ireland-40429507.txt"
+                  target="_blank" rel="noopener">bbcnews-text/uk-northern-ireland-40429507.txt</a></p>
+              <p><a href="bbcnews-html/uk-northern-ireland-40902211.html"
+                  target="_blank" rel="noopener">bbcnews-html/uk-northern-ireland-40902211.html</a></p>
+              <p><a href="bbcnews-text/uk-northern-ireland-40902211.txt"
+                  target="_blank" rel="noopener">bbcnews-text/uk-northern-ireland-40902211.txt</a></p>
+              <p><a
+                  href="bbcnews-html/uk-northern-ireland-politics-39328073.html"
+                  target="_blank" rel="noopener">bbcnews-html/uk-northern-ireland-politics-39328073.html</a></p>
+              <p><a
+                  href="bbcnews-text/uk-northern-ireland-politics-39328073.txt"
+                  target="_blank" rel="noopener">bbcnews-text/uk-northern-ireland-politics-39328073.txt</a></p>
+              <p><a
+                  href="bbcnews-html/uk-northern-ireland-politics-40506189.html"
+                  target="_blank" rel="noopener">bbcnews-html/uk-northern-ireland-politics-40506189.html</a></p>
+              <p><a
+                  href="bbcnews-text/uk-northern-ireland-politics-40506189.txt"
+                  target="_blank" rel="noopener">bbcnews-text/uk-northern-ireland-politics-40506189.txt</a></p>
+              <p><a href="bbcnews-html/uk-politics-33278407.html"
+                  target="_blank" rel="noopener">bbcnews-html/uk-politics-33278407.html</a></p>
+              <p><a href="bbcnews-text/uk-politics-33278407.txt" target="_blank"
+                  rel="noopener">bbcnews-text/uk-politics-33278407.txt</a></p>
+              <p><a href="bbcnews-html/uk-politics-33358262.html"
+                  target="_blank" rel="noopener">bbcnews-html/uk-politics-33358262.html</a></p>
+              <p><a href="bbcnews-text/uk-politics-33358262.txt" target="_blank"
+                  rel="noopener">bbcnews-text/uk-politics-33358262.txt</a></p>
+              <p><a href="bbcnews-html/uk-politics-33438072.html"
+                  target="_blank" rel="noopener">bbcnews-html/uk-politics-33438072.html</a></p>
+              <p><a href="bbcnews-text/uk-politics-33438072.txt" target="_blank"
+                  rel="noopener">bbcnews-text/uk-politics-33438072.txt</a></p>
+              <p><a href="bbcnews-html/uk-politics-33454266.html"
+                  target="_blank" rel="noopener">bbcnews-html/uk-politics-33454266.html</a></p>
+              <p><a href="bbcnews-text/uk-politics-33454266.txt" target="_blank"
+                  rel="noopener">bbcnews-text/uk-politics-33454266.txt</a></p>
+              <p><a href="bbcnews-html/uk-politics-36216768.html"
+                  target="_blank" rel="noopener">bbcnews-html/uk-politics-36216768.html</a></p>
+              <p><a href="bbcnews-text/uk-politics-36216768.txt" target="_blank"
+                  rel="noopener">bbcnews-text/uk-politics-36216768.txt</a></p>
+              <p><a href="bbcnews-html/uk-politics-36461998.html"
+                  target="_blank" rel="noopener">bbcnews-html/uk-politics-36461998.html</a></p>
+              <p><a href="bbcnews-text/uk-politics-36461998.txt" target="_blank"
+                  rel="noopener">bbcnews-text/uk-politics-36461998.txt</a></p>
+              <p><a href="bbcnews-html/uk-politics-36484376.html"
+                  target="_blank" rel="noopener">bbcnews-html/uk-politics-36484376.html</a></p>
+              <p><a href="bbcnews-text/uk-politics-36484376.txt" target="_blank"
+                  rel="noopener">bbcnews-text/uk-politics-36484376.txt</a></p>
+              <p><a href="bbcnews-html/uk-politics-38255557.html"
+                  target="_blank" rel="noopener">bbcnews-html/uk-politics-38255557.html</a></p>
+              <p><a href="bbcnews-text/uk-politics-38255557.txt" target="_blank"
+                  rel="noopener">bbcnews-text/uk-politics-38255557.txt</a></p>
+              <p><a href="bbcnews-html/uk-politics-38558056.html"
+                  target="_blank" rel="noopener">bbcnews-html/uk-politics-38558056.html</a></p>
+              <p><a href="bbcnews-text/uk-politics-38558056.txt" target="_blank"
+                  rel="noopener">bbcnews-text/uk-politics-38558056.txt</a></p>
+              <p><a href="bbcnews-html/uk-politics-38676889.html"
+                  target="_blank" rel="noopener">bbcnews-html/uk-politics-38676889.html</a></p>
+              <p><a href="bbcnews-text/uk-politics-38676889.txt" target="_blank"
+                  rel="noopener">bbcnews-text/uk-politics-38676889.txt</a></p>
+              <p><a href="bbcnews-html/uk-politics-39106179.html"
+                  target="_blank" rel="noopener">bbcnews-html/uk-politics-39106179.html</a></p>
+              <p><a href="bbcnews-text/uk-politics-39106179.txt" target="_blank"
+                  rel="noopener">bbcnews-text/uk-politics-39106179.txt</a></p>
+              <p><a href="bbcnews-html/uk-politics-40154519.html"
+                  target="_blank" rel="noopener">bbcnews-html/uk-politics-40154519.html</a></p>
+              <p><a href="bbcnews-text/uk-politics-40154519.txt" target="_blank"
+                  rel="noopener">bbcnews-text/uk-politics-40154519.txt</a></p>
+              <p><a href="bbcnews-html/uk-politics-40189828.html"
+                  target="_blank" rel="noopener">bbcnews-html/uk-politics-40189828.html</a></p>
+              <p><a href="bbcnews-text/uk-politics-40189828.txt" target="_blank"
+                  rel="noopener">bbcnews-text/uk-politics-40189828.txt</a></p>
+              <p><a href="bbcnews-html/uk-politics-40387897.html"
+                  target="_blank" rel="noopener">bbcnews-html/uk-politics-40387897.html</a></p>
+              <p><a href="bbcnews-text/uk-politics-40387897.txt" target="_blank"
+                  rel="noopener">bbcnews-text/uk-politics-40387897.txt</a></p>
+              <p><a href="bbcnews-html/uk-politics-40406142.html"
+                  target="_blank" rel="noopener">bbcnews-html/uk-politics-40406142.html</a></p>
+              <p><a href="bbcnews-text/uk-politics-40406142.txt" target="_blank"
+                  rel="noopener">bbcnews-text/uk-politics-40406142.txt</a></p>
+              <p><a href="bbcnews-html/uk-politics-40436972.html"
+                  target="_blank" rel="noopener">bbcnews-html/uk-politics-40436972.html</a></p>
+              <p><a href="bbcnews-text/uk-politics-40436972.txt" target="_blank"
+                  rel="noopener">bbcnews-text/uk-politics-40436972.txt</a></p>
+              <p><a href="bbcnews-html/uk-politics-40446923.html"
+                  target="_blank" rel="noopener">bbcnews-html/uk-politics-40446923.html</a></p>
+              <p><a href="bbcnews-text/uk-politics-40446923.txt" target="_blank"
+                  rel="noopener">bbcnews-text/uk-politics-40446923.txt</a></p>
+              <p><a href="bbcnews-html/uk-politics-40655843.html"
+                  target="_blank" rel="noopener">bbcnews-html/uk-politics-40655843.html</a></p>
+              <p><a href="bbcnews-text/uk-politics-40655843.txt" target="_blank"
+                  rel="noopener">bbcnews-text/uk-politics-40655843.txt</a></p>
+              <p><a href="bbcnews-html/uk-politics-parliaments-40381416.html"
+                  target="_blank" rel="noopener">bbcnews-html/uk-politics-parliaments-40381416.html</a></p>
+              <p><a href="bbcnews-text/uk-politics-parliaments-40381416.txt"
+                  target="_blank" rel="noopener">bbcnews-text/uk-politics-parliaments-40381416.txt</a></p>
+              <p><a href="bbcnews-html/uk-politics-parliaments-40684750.html"
+                  target="_blank" rel="noopener">bbcnews-html/uk-politics-parliaments-40684750.html</a></p>
+              <p><a href="bbcnews-text/uk-politics-parliaments-40684750.txt"
+                  target="_blank" rel="noopener">bbcnews-text/uk-politics-parliaments-40684750.txt</a></p>
+              <p><a
+                  href="bbcnews-html/uk-scotland-scotland-politics-40405542.html"
+                  target="_blank" rel="noopener">bbcnews-html/uk-scotland-scotland-politics-40405542.html</a></p>
+              <p><a
+                  href="bbcnews-text/uk-scotland-scotland-politics-40405542.txt"
+                  target="_blank" rel="noopener">bbcnews-text/uk-scotland-scotland-politics-40405542.txt</a></p>
+              <p><a
+                  href="bbcnews-html/uk-scotland-scotland-politics-40406252.html"
+                  target="_blank" rel="noopener">bbcnews-html/uk-scotland-scotland-politics-40406252.html</a></p>
+              <p><a
+                  href="bbcnews-text/uk-scotland-scotland-politics-40406252.txt"
+                  target="_blank" rel="noopener">bbcnews-text/uk-scotland-scotland-politics-40406252.txt</a></p>
+              <p><a
+                  href="bbcnews-html/uk-scotland-scotland-politics-40443498.html"
+                  target="_blank" rel="noopener">bbcnews-html/uk-scotland-scotland-politics-40443498.html</a></p>
+              <p><a
+                  href="bbcnews-text/uk-scotland-scotland-politics-40443498.txt"
+                  target="_blank" rel="noopener">bbcnews-text/uk-scotland-scotland-politics-40443498.txt</a></p>
+              <p><a
+                  href="bbcnews-html/uk-scotland-scotland-politics-40448181.html"
+                  target="_blank" rel="noopener">bbcnews-html/uk-scotland-scotland-politics-40448181.html</a></p>
+              <p><a
+                  href="bbcnews-text/uk-scotland-scotland-politics-40448181.txt"
+                  target="_blank" rel="noopener">bbcnews-text/uk-scotland-scotland-politics-40448181.txt</a></p>
+              <p><a href="bbcnews-html/uk-wales-politics-40598872.html"
+                  target="_blank" rel="noopener">bbcnews-html/uk-wales-politics-40598872.html</a></p>
+              <p><a href="bbcnews-text/uk-wales-politics-40598872.txt"
+                  target="_blank" rel="noopener">bbcnews-text/uk-wales-politics-40598872.txt</a></p>
+              <p><a href="bbcnews-html/uk-wales-politics-40655703.html"
+                  target="_blank" rel="noopener">bbcnews-html/uk-wales-politics-40655703.html</a></p>
+              <p><a href="bbcnews-text/uk-wales-politics-40655703.txt"
+                  target="_blank" rel="noopener">bbcnews-text/uk-wales-politics-40655703.txt</a></p>
+              <p><a href="bbcnews-html/uk-wales-politics-40775291.html"
+                  target="_blank" rel="noopener">bbcnews-html/uk-wales-politics-40775291.html</a></p>
+              <p><a href="bbcnews-text/uk-wales-politics-40775291.txt"
+                  target="_blank" rel="noopener">bbcnews-text/uk-wales-politics-40775291.txt</a></p>
+              <p><a href="bbcnews-html/world-africa-17739388.html"
+                  target="_blank" rel="noopener">bbcnews-html/world-africa-17739388.html</a></p>
+              <p><a href="bbcnews-text/world-africa-17739388.txt"
+                  target="_blank" rel="noopener">bbcnews-text/world-africa-17739388.txt</a></p>
+              <p><a href="bbcnews-html/world-asia-15568181.html" target="_blank"
+                  rel="noopener">bbcnews-html/world-asia-15568181.html</a></p>
+              <p><a href="bbcnews-text/world-asia-15568181.txt" target="_blank"
+                  rel="noopener">bbcnews-text/world-asia-15568181.txt</a></p>
+              <p><a href="bbcnews-html/world-asia-15571017.html" target="_blank"
+                  rel="noopener">bbcnews-html/world-asia-15571017.html</a></p>
+              <p><a href="bbcnews-text/world-asia-15571017.txt" target="_blank"
+                  rel="noopener">bbcnews-text/world-asia-15571017.txt</a></p>
+              <p><a href="bbcnews-html/world-asia-15799562.html" target="_blank"
+                  rel="noopener">bbcnews-html/world-asia-15799562.html</a></p>
+              <p><a href="bbcnews-text/world-asia-15799562.txt" target="_blank"
+                  rel="noopener">bbcnews-text/world-asia-15799562.txt</a></p>
+              <p><a href="bbcnews-html/world-asia-16094646.html" target="_blank"
+                  rel="noopener">bbcnews-html/world-asia-16094646.html</a></p>
+              <p><a href="bbcnews-text/world-asia-16094646.txt" target="_blank"
+                  rel="noopener">bbcnews-text/world-asia-16094646.txt</a></p>
+              <p><a href="bbcnews-html/world-asia-16218112.html" target="_blank"
+                  rel="noopener">bbcnews-html/world-asia-16218112.html</a></p>
+              <p><a href="bbcnews-text/world-asia-16218112.txt" target="_blank"
+                  rel="noopener">bbcnews-text/world-asia-16218112.txt</a></p>
+              <p><a href="bbcnews-html/world-asia-16351377.html" target="_blank"
+                  rel="noopener">bbcnews-html/world-asia-16351377.html</a></p>
+              <p><a href="bbcnews-text/world-asia-16351377.txt" target="_blank"
+                  rel="noopener">bbcnews-text/world-asia-16351377.txt</a></p>
+              <p><a href="bbcnews-html/world-asia-16426193.html" target="_blank"
+                  rel="noopener">bbcnews-html/world-asia-16426193.html</a></p>
+              <p><a href="bbcnews-text/world-asia-16426193.txt" target="_blank"
+                  rel="noopener">bbcnews-text/world-asia-16426193.txt</a></p>
+              <p><a href="bbcnews-html/world-asia-16962868.html" target="_blank"
+                  rel="noopener">bbcnews-html/world-asia-16962868.html</a></p>
+              <p><a href="bbcnews-text/world-asia-16962868.txt" target="_blank"
+                  rel="noopener">bbcnews-text/world-asia-16962868.txt</a></p>
+              <p><a href="bbcnews-html/world-asia-18270058.html" target="_blank"
+                  rel="noopener">bbcnews-html/world-asia-18270058.html</a></p>
+              <p><a href="bbcnews-text/world-asia-18270058.txt" target="_blank"
+                  rel="noopener">bbcnews-text/world-asia-18270058.txt</a></p>
+              <p><a href="bbcnews-html/world-asia-19257305.html" target="_blank"
+                  rel="noopener">bbcnews-html/world-asia-19257305.html</a></p>
+              <p><a href="bbcnews-text/world-asia-19257305.txt" target="_blank"
+                  rel="noopener">bbcnews-text/world-asia-19257305.txt</a></p>
+              <p><a href="bbcnews-html/world-asia-19630110.html" target="_blank"
+                  rel="noopener">bbcnews-html/world-asia-19630110.html</a></p>
+              <p><a href="bbcnews-text/world-asia-19630110.txt" target="_blank"
+                  rel="noopener">bbcnews-text/world-asia-19630110.txt</a></p>
+              <p><a href="bbcnews-html/world-asia-20233754.html" target="_blank"
+                  rel="noopener">bbcnews-html/world-asia-20233754.html</a></p>
+              <p><a href="bbcnews-text/world-asia-20233754.txt" target="_blank"
+                  rel="noopener">bbcnews-text/world-asia-20233754.txt</a></p>
+              <p><a href="bbcnews-html/world-asia-29547621.html" target="_blank"
+                  rel="noopener">bbcnews-html/world-asia-29547621.html</a></p>
+              <p><a href="bbcnews-text/world-asia-29547621.txt" target="_blank"
+                  rel="noopener">bbcnews-text/world-asia-29547621.txt</a></p>
+              <p><a href="bbcnews-html/world-asia-30373877.html" target="_blank"
+                  rel="noopener">bbcnews-html/world-asia-30373877.html</a></p>
+              <p><a href="bbcnews-text/world-asia-30373877.txt" target="_blank"
+                  rel="noopener">bbcnews-text/world-asia-30373877.txt</a></p>
+              <p><a href="bbcnews-html/world-asia-34451326.html" target="_blank"
+                  rel="noopener">bbcnews-html/world-asia-34451326.html</a></p>
+              <p><a href="bbcnews-text/world-asia-34451326.txt" target="_blank"
+                  rel="noopener">bbcnews-text/world-asia-34451326.txt</a></p>
+              <p><a href="bbcnews-html/world-asia-34665539.html" target="_blank"
+                  rel="noopener">bbcnews-html/world-asia-34665539.html</a></p>
+              <p><a href="bbcnews-text/world-asia-34665539.txt" target="_blank"
+                  rel="noopener">bbcnews-text/world-asia-34665539.txt</a></p>
+              <p><a href="bbcnews-html/world-asia-34729150.html" target="_blank"
+                  rel="noopener">bbcnews-html/world-asia-34729150.html</a></p>
+              <p><a href="bbcnews-text/world-asia-34729150.txt" target="_blank"
+                  rel="noopener">bbcnews-text/world-asia-34729150.txt</a></p>
+              <p><a href="bbcnews-html/world-asia-35192142.html" target="_blank"
+                  rel="noopener">bbcnews-html/world-asia-35192142.html</a></p>
+              <p><a href="bbcnews-text/world-asia-35192142.txt" target="_blank"
+                  rel="noopener">bbcnews-text/world-asia-35192142.txt</a></p>
+              <p><a href="bbcnews-html/world-asia-35320444.html" target="_blank"
+                  rel="noopener">bbcnews-html/world-asia-35320444.html</a></p>
+              <p><a href="bbcnews-text/world-asia-35320444.txt" target="_blank"
+                  rel="noopener">bbcnews-text/world-asia-35320444.txt</a></p>
+              <p><a href="bbcnews-html/world-asia-35370367.html" target="_blank"
+                  rel="noopener">bbcnews-html/world-asia-35370367.html</a></p>
+              <p><a href="bbcnews-text/world-asia-35370367.txt" target="_blank"
+                  rel="noopener">bbcnews-text/world-asia-35370367.txt</a></p>
+              <p><a href="bbcnews-html/world-asia-35416409.html" target="_blank"
+                  rel="noopener">bbcnews-html/world-asia-35416409.html</a></p>
+              <p><a href="bbcnews-text/world-asia-35416409.txt" target="_blank"
+                  rel="noopener">bbcnews-text/world-asia-35416409.txt</a></p>
+              <p><a href="bbcnews-html/world-asia-35426175.html" target="_blank"
+                  rel="noopener">bbcnews-html/world-asia-35426175.html</a></p>
+              <p><a href="bbcnews-text/world-asia-35426175.txt" target="_blank"
+                  rel="noopener">bbcnews-text/world-asia-35426175.txt</a></p>
+              <p><a href="bbcnews-html/world-asia-35450641.html" target="_blank"
+                  rel="noopener">bbcnews-html/world-asia-35450641.html</a></p>
+              <p><a href="bbcnews-text/world-asia-35450641.txt" target="_blank"
+                  rel="noopener">bbcnews-text/world-asia-35450641.txt</a></p>
+              <p><a href="bbcnews-html/world-asia-35593162.html" target="_blank"
+                  rel="noopener">bbcnews-html/world-asia-35593162.html</a></p>
+              <p><a href="bbcnews-text/world-asia-35593162.txt" target="_blank"
+                  rel="noopener">bbcnews-text/world-asia-35593162.txt</a></p>
+              <p><a href="bbcnews-html/world-asia-35600599.html" target="_blank"
+                  rel="noopener">bbcnews-html/world-asia-35600599.html</a></p>
+              <p><a href="bbcnews-text/world-asia-35600599.txt" target="_blank"
+                  rel="noopener">bbcnews-text/world-asia-35600599.txt</a></p>
+              <p><a href="bbcnews-html/world-asia-35868982.html" target="_blank"
+                  rel="noopener">bbcnews-html/world-asia-35868982.html</a></p>
+              <p><a href="bbcnews-text/world-asia-35868982.txt" target="_blank"
+                  rel="noopener">bbcnews-text/world-asia-35868982.txt</a></p>
+              <p><a href="bbcnews-html/world-asia-36700583.html" target="_blank"
+                  rel="noopener">bbcnews-html/world-asia-36700583.html</a></p>
+              <p><a href="bbcnews-text/world-asia-36700583.txt" target="_blank"
+                  rel="noopener">bbcnews-text/world-asia-36700583.txt</a></p>
+              <p><a href="bbcnews-html/world-asia-36710808.html" target="_blank"
+                  rel="noopener">bbcnews-html/world-asia-36710808.html</a></p>
+              <p><a href="bbcnews-text/world-asia-36710808.txt" target="_blank"
+                  rel="noopener">bbcnews-text/world-asia-36710808.txt</a></p>
+              <p><a href="bbcnews-html/world-asia-38559206.html" target="_blank"
+                  rel="noopener">bbcnews-html/world-asia-38559206.html</a></p>
+              <p><a href="bbcnews-text/world-asia-38559206.txt" target="_blank"
+                  rel="noopener">bbcnews-text/world-asia-38559206.txt</a></p>
+              <p><a href="bbcnews-html/world-asia-40871854.html" target="_blank"
+                  rel="noopener">bbcnews-html/world-asia-40871854.html</a></p>
+              <p><a href="bbcnews-text/world-asia-40871854.txt" target="_blank"
+                  rel="noopener">bbcnews-text/world-asia-40871854.txt</a></p>
+              <p><a href="bbcnews-html/world-asia-china-17229078.html"
+                  target="_blank" rel="noopener">bbcnews-html/world-asia-china-17229078.html</a></p>
+              <p><a href="bbcnews-text/world-asia-china-17229078.txt"
+                  target="_blank" rel="noopener">bbcnews-text/world-asia-china-17229078.txt</a></p>
+              <p><a href="bbcnews-html/world-asia-china-17414494.html"
+                  target="_blank" rel="noopener">bbcnews-html/world-asia-china-17414494.html</a></p>
+              <p><a href="bbcnews-text/world-asia-china-17414494.txt"
+                  target="_blank" rel="noopener">bbcnews-text/world-asia-china-17414494.txt</a></p>
+              <p><a href="bbcnews-html/world-asia-china-17821844.html"
+                  target="_blank" rel="noopener">bbcnews-html/world-asia-china-17821844.html</a></p>
+              <p><a href="bbcnews-text/world-asia-china-17821844.txt"
+                  target="_blank" rel="noopener">bbcnews-text/world-asia-china-17821844.txt</a></p>
+              <p><a href="bbcnews-html/world-asia-china-18684895.html"
+                  target="_blank" rel="noopener">bbcnews-html/world-asia-china-18684895.html</a></p>
+              <p><a href="bbcnews-text/world-asia-china-18684895.txt"
+                  target="_blank" rel="noopener">bbcnews-text/world-asia-china-18684895.txt</a></p>
+              <p><a href="bbcnews-html/world-asia-china-18684903.html"
+                  target="_blank" rel="noopener">bbcnews-html/world-asia-china-18684903.html</a></p>
+              <p><a href="bbcnews-text/world-asia-china-18684903.txt"
+                  target="_blank" rel="noopener">bbcnews-text/world-asia-china-18684903.txt</a></p>
+              <p><a href="bbcnews-html/world-asia-china-18718182.html"
+                  target="_blank" rel="noopener">bbcnews-html/world-asia-china-18718182.html</a></p>
+              <p><a href="bbcnews-text/world-asia-china-18718182.txt"
+                  target="_blank" rel="noopener">bbcnews-text/world-asia-china-18718182.txt</a></p>
+              <p><a href="bbcnews-html/world-asia-china-19264601.html"
+                  target="_blank" rel="noopener">bbcnews-html/world-asia-china-19264601.html</a></p>
+              <p><a href="bbcnews-text/world-asia-china-19264601.txt"
+                  target="_blank" rel="noopener">bbcnews-text/world-asia-china-19264601.txt</a></p>
+              <p><a href="bbcnews-html/world-asia-china-19739803.html"
+                  target="_blank" rel="noopener">bbcnews-html/world-asia-china-19739803.html</a></p>
+              <p><a href="bbcnews-text/world-asia-china-19739803.txt"
+                  target="_blank" rel="noopener">bbcnews-text/world-asia-china-19739803.txt</a></p>
+              <p><a href="bbcnews-html/world-asia-china-19827537.html"
+                  target="_blank" rel="noopener">bbcnews-html/world-asia-china-19827537.html</a></p>
+              <p><a href="bbcnews-text/world-asia-china-19827537.txt"
+                  target="_blank" rel="noopener">bbcnews-text/world-asia-china-19827537.txt</a></p>
+              <p><a href="bbcnews-html/world-asia-china-19987295.html"
+                  target="_blank" rel="noopener">bbcnews-html/world-asia-china-19987295.html</a></p>
+              <p><a href="bbcnews-text/world-asia-china-19987295.txt"
+                  target="_blank" rel="noopener">bbcnews-text/world-asia-china-19987295.txt</a></p>
+              <p><a href="bbcnews-html/world-asia-china-20293887.html"
+                  target="_blank" rel="noopener">bbcnews-html/world-asia-china-20293887.html</a></p>
+              <p><a href="bbcnews-text/world-asia-china-20293887.txt"
+                  target="_blank" rel="noopener">bbcnews-text/world-asia-china-20293887.txt</a></p>
+              <p><a href="bbcnews-html/world-asia-china-20321610.html"
+                  target="_blank" rel="noopener">bbcnews-html/world-asia-china-20321610.html</a></p>
+              <p><a href="bbcnews-text/world-asia-china-20321610.txt"
+                  target="_blank" rel="noopener">bbcnews-text/world-asia-china-20321610.txt</a></p>
+              <p><a href="bbcnews-html/world-asia-china-20457627.html"
+                  target="_blank" rel="noopener">bbcnews-html/world-asia-china-20457627.html</a></p>
+              <p><a href="bbcnews-text/world-asia-china-20457627.txt"
+                  target="_blank" rel="noopener">bbcnews-text/world-asia-china-20457627.txt</a></p>
+              <p><a href="bbcnews-html/world-asia-china-22278037.html"
+                  target="_blank" rel="noopener">bbcnews-html/world-asia-china-22278037.html</a></p>
+              <p><a href="bbcnews-text/world-asia-china-22278037.txt"
+                  target="_blank" rel="noopener">bbcnews-text/world-asia-china-22278037.txt</a></p>
+              <p><a href="bbcnews-html/world-asia-china-30722268.html"
+                  target="_blank" rel="noopener">bbcnews-html/world-asia-china-30722268.html</a></p>
+              <p><a href="bbcnews-text/world-asia-china-30722268.txt"
+                  target="_blank" rel="noopener">bbcnews-text/world-asia-china-30722268.txt</a></p>
+              <p><a href="bbcnews-html/world-asia-china-30810439.html"
+                  target="_blank" rel="noopener">bbcnews-html/world-asia-china-30810439.html</a></p>
+              <p><a href="bbcnews-text/world-asia-china-30810439.txt"
+                  target="_blank" rel="noopener">bbcnews-text/world-asia-china-30810439.txt</a></p>
+              <p><a href="bbcnews-html/world-asia-china-32895245.html"
+                  target="_blank" rel="noopener">bbcnews-html/world-asia-china-32895245.html</a></p>
+              <p><a href="bbcnews-text/world-asia-china-32895245.txt"
+                  target="_blank" rel="noopener">bbcnews-text/world-asia-china-32895245.txt</a></p>
+              <p><a href="bbcnews-html/world-asia-china-33251572.html"
+                  target="_blank" rel="noopener">bbcnews-html/world-asia-china-33251572.html</a></p>
+              <p><a href="bbcnews-text/world-asia-china-33251572.txt"
+                  target="_blank" rel="noopener">bbcnews-text/world-asia-china-33251572.txt</a></p>
+              <p><a href="bbcnews-html/world-asia-china-36472103.html"
+                  target="_blank" rel="noopener">bbcnews-html/world-asia-china-36472103.html</a></p>
+              <p><a href="bbcnews-text/world-asia-china-36472103.txt"
+                  target="_blank" rel="noopener">bbcnews-text/world-asia-china-36472103.txt</a></p>
+              <p><a href="bbcnews-html/world-asia-china-36738682.html"
+                  target="_blank" rel="noopener">bbcnews-html/world-asia-china-36738682.html</a></p>
+              <p><a href="bbcnews-text/world-asia-china-36738682.txt"
+                  target="_blank" rel="noopener">bbcnews-text/world-asia-china-36738682.txt</a></p>
+              <p><a href="bbcnews-html/world-asia-china-38093370.html"
+                  target="_blank" rel="noopener">bbcnews-html/world-asia-china-38093370.html</a></p>
+              <p><a href="bbcnews-text/world-asia-china-38093370.txt"
+                  target="_blank" rel="noopener">bbcnews-text/world-asia-china-38093370.txt</a></p>
+              <p><a href="bbcnews-html/world-asia-china-38703700.html"
+                  target="_blank" rel="noopener">bbcnews-html/world-asia-china-38703700.html</a></p>
+              <p><a href="bbcnews-text/world-asia-china-38703700.txt"
+                  target="_blank" rel="noopener">bbcnews-text/world-asia-china-38703700.txt</a></p>
+              <p><a href="bbcnews-html/world-asia-china-38754047.html"
+                  target="_blank" rel="noopener">bbcnews-html/world-asia-china-38754047.html</a></p>
+              <p><a href="bbcnews-text/world-asia-china-38754047.txt"
+                  target="_blank" rel="noopener">bbcnews-text/world-asia-china-38754047.txt</a></p>
+              <p><a href="bbcnews-html/world-asia-china-39061702.html"
+                  target="_blank" rel="noopener">bbcnews-html/world-asia-china-39061702.html</a></p>
+              <p><a href="bbcnews-text/world-asia-china-39061702.txt"
+                  target="_blank" rel="noopener">bbcnews-text/world-asia-china-39061702.txt</a></p>
+              <p><a href="bbcnews-html/world-asia-china-39137420.html"
+                  target="_blank" rel="noopener">bbcnews-html/world-asia-china-39137420.html</a></p>
+              <p><a href="bbcnews-text/world-asia-china-39137420.txt"
+                  target="_blank" rel="noopener">bbcnews-text/world-asia-china-39137420.txt</a></p>
+              <p><a href="bbcnews-html/world-asia-china-39263797.html"
+                  target="_blank" rel="noopener">bbcnews-html/world-asia-china-39263797.html</a></p>
+              <p><a href="bbcnews-text/world-asia-china-39263797.txt"
+                  target="_blank" rel="noopener">bbcnews-text/world-asia-china-39263797.txt</a></p>
+              <p><a href="bbcnews-html/world-asia-china-39483148.html"
+                  target="_blank" rel="noopener">bbcnews-html/world-asia-china-39483148.html</a></p>
+              <p><a href="bbcnews-text/world-asia-china-39483148.txt"
+                  target="_blank" rel="noopener">bbcnews-text/world-asia-china-39483148.txt</a></p>
+              <p><a href="bbcnews-html/world-asia-china-40585327.html"
+                  target="_blank" rel="noopener">bbcnews-html/world-asia-china-40585327.html</a></p>
+              <p><a href="bbcnews-text/world-asia-china-40585327.txt"
+                  target="_blank" rel="noopener">bbcnews-text/world-asia-china-40585327.txt</a></p>
+              <p><a href="bbcnews-html/world-asia-pacific-10638506.html"
+                  target="_blank" rel="noopener">bbcnews-html/world-asia-pacific-10638506.html</a></p>
+              <p><a href="bbcnews-text/world-asia-pacific-10638506.txt"
+                  target="_blank" rel="noopener">bbcnews-text/world-asia-pacific-10638506.txt</a></p>
+              <p><a href="bbcnews-html/world-asia-pacific-11551399.html"
+                  target="_blank" rel="noopener">bbcnews-html/world-asia-pacific-11551399.html</a></p>
+              <p><a href="bbcnews-text/world-asia-pacific-11551399.txt"
+                  target="_blank" rel="noopener">bbcnews-text/world-asia-pacific-11551399.txt</a></p>
+              <p><a href="bbcnews-html/world-asia-pacific-11845746.html"
+                  target="_blank" rel="noopener">bbcnews-html/world-asia-pacific-11845746.html</a></p>
+              <p><a href="bbcnews-text/world-asia-pacific-11845746.txt"
+                  target="_blank" rel="noopener">bbcnews-text/world-asia-pacific-11845746.txt</a></p>
+              <p><a href="bbcnews-html/world-asia-pacific-12461464.html"
+                  target="_blank" rel="noopener">bbcnews-html/world-asia-pacific-12461464.html</a></p>
+              <p><a href="bbcnews-text/world-asia-pacific-12461464.txt"
+                  target="_blank" rel="noopener">bbcnews-text/world-asia-pacific-12461464.txt</a></p>
+              <p><a href="bbcnews-html/world-asia-pacific-12575470.html"
+                  target="_blank" rel="noopener">bbcnews-html/world-asia-pacific-12575470.html</a></p>
+              <p><a href="bbcnews-text/world-asia-pacific-12575470.txt"
+                  target="_blank" rel="noopener">bbcnews-text/world-asia-pacific-12575470.txt</a></p>
+              <p><a href="bbcnews-html/world-asia-pacific-12689911.html"
+                  target="_blank" rel="noopener">bbcnews-html/world-asia-pacific-12689911.html</a></p>
+              <p><a href="bbcnews-text/world-asia-pacific-12689911.txt"
+                  target="_blank" rel="noopener">bbcnews-text/world-asia-pacific-12689911.txt</a></p>
+              <p><a href="bbcnews-html/world-asia-pacific-12735884.html"
+                  target="_blank" rel="noopener">bbcnews-html/world-asia-pacific-12735884.html</a></p>
+              <p><a href="bbcnews-text/world-asia-pacific-12735884.txt"
+                  target="_blank" rel="noopener">bbcnews-text/world-asia-pacific-12735884.txt</a></p>
+              <p><a href="bbcnews-html/world-asia-pacific-13206188.html"
+                  target="_blank" rel="noopener">bbcnews-html/world-asia-pacific-13206188.html</a></p>
+              <p><a href="bbcnews-text/world-asia-pacific-13206188.txt"
+                  target="_blank" rel="noopener">bbcnews-text/world-asia-pacific-13206188.txt</a></p>
+              <p><a href="bbcnews-html/world-asia-pacific-13748349.html"
+                  target="_blank" rel="noopener">bbcnews-html/world-asia-pacific-13748349.html</a></p>
+              <p><a href="bbcnews-text/world-asia-pacific-13748349.txt"
+                  target="_blank" rel="noopener">bbcnews-text/world-asia-pacific-13748349.txt</a></p>
+              <p><a href="bbcnews-html/world-asia-pacific-13932398.html"
+                  target="_blank" rel="noopener">bbcnews-html/world-asia-pacific-13932398.html</a></p>
+              <p><a href="bbcnews-text/world-asia-pacific-13932398.txt"
+                  target="_blank" rel="noopener">bbcnews-text/world-asia-pacific-13932398.txt</a></p>
+              <p><a href="bbcnews-html/world-asia-pacific-14205998.html"
+                  target="_blank" rel="noopener">bbcnews-html/world-asia-pacific-14205998.html</a></p>
+              <p><a href="bbcnews-text/world-asia-pacific-14205998.txt"
+                  target="_blank" rel="noopener">bbcnews-text/world-asia-pacific-14205998.txt</a></p>
+              <p><a href="bbcnews-html/world-asia-pacific-14384605.html"
+                  target="_blank" rel="noopener">bbcnews-html/world-asia-pacific-14384605.html</a></p>
+              <p><a href="bbcnews-text/world-asia-pacific-14384605.txt"
+                  target="_blank" rel="noopener">bbcnews-text/world-asia-pacific-14384605.txt</a></p>
+              <p><a href="bbcnews-html/world-asia-pacific-14533879.html"
+                  target="_blank" rel="noopener">bbcnews-html/world-asia-pacific-14533879.html</a></p>
+              <p><a href="bbcnews-text/world-asia-pacific-14533879.txt"
+                  target="_blank" rel="noopener">bbcnews-text/world-asia-pacific-14533879.txt</a></p>
+              <p><a href="bbcnews-html/world-asia-pacific-15088982.html"
+                  target="_blank" rel="noopener">bbcnews-html/world-asia-pacific-15088982.html</a></p>
+              <p><a href="bbcnews-text/world-asia-pacific-15088982.txt"
+                  target="_blank" rel="noopener">bbcnews-text/world-asia-pacific-15088982.txt</a></p>
+              <p><a href="bbcnews-html/world-asia-pacific-15147043.html"
+                  target="_blank" rel="noopener">bbcnews-html/world-asia-pacific-15147043.html</a></p>
+              <p><a href="bbcnews-text/world-asia-pacific-15147043.txt"
+                  target="_blank" rel="noopener">bbcnews-text/world-asia-pacific-15147043.txt</a></p>
+              <p><a href="bbcnews-html/world-asia-pacific-15163543.html"
+                  target="_blank" rel="noopener">bbcnews-html/world-asia-pacific-15163543.html</a></p>
+              <p><a href="bbcnews-text/world-asia-pacific-15163543.txt"
+                  target="_blank" rel="noopener">bbcnews-text/world-asia-pacific-15163543.txt</a></p>
+              <p><a href="bbcnews-html/world-asia-pacific-15169007.html"
+                  target="_blank" rel="noopener">bbcnews-html/world-asia-pacific-15169007.html</a></p>
+              <p><a href="bbcnews-text/world-asia-pacific-15169007.txt"
+                  target="_blank" rel="noopener">bbcnews-text/world-asia-pacific-15169007.txt</a></p>
+              <p><a href="bbcnews-html/world-asia-pacific-16197014.html"
+                  target="_blank" rel="noopener">bbcnews-html/world-asia-pacific-16197014.html</a></p>
+              <p><a href="bbcnews-text/world-asia-pacific-16197014.txt"
+                  target="_blank" rel="noopener">bbcnews-text/world-asia-pacific-16197014.txt</a></p>
+              <p><a href="bbcnews-html/world-asia-pacific-16340072.html"
+                  target="_blank" rel="noopener">bbcnews-html/world-asia-pacific-16340072.html</a></p>
+              <p><a href="bbcnews-text/world-asia-pacific-16340072.txt"
+                  target="_blank" rel="noopener">bbcnews-text/world-asia-pacific-16340072.txt</a></p>
+              <p><a href="bbcnews-html/world-asia-pacific-16567315.html"
+                  target="_blank" rel="noopener">bbcnews-html/world-asia-pacific-16567315.html</a></p>
+              <p><a href="bbcnews-text/world-asia-pacific-16567315.txt"
+                  target="_blank" rel="noopener">bbcnews-text/world-asia-pacific-16567315.txt</a></p>
+              <p><a href="bbcnews-html/world-asia-pacific-16689779.html"
+                  target="_blank" rel="noopener">bbcnews-html/world-asia-pacific-16689779.html</a></p>
+              <p><a href="bbcnews-text/world-asia-pacific-16689779.txt"
+                  target="_blank" rel="noopener">bbcnews-text/world-asia-pacific-16689779.txt</a></p>
+              <p><a href="bbcnews-html/world-asia-pacific-16860974.html"
+                  target="_blank" rel="noopener">bbcnews-html/world-asia-pacific-16860974.html</a></p>
+              <p><a href="bbcnews-text/world-asia-pacific-16860974.txt"
+                  target="_blank" rel="noopener">bbcnews-text/world-asia-pacific-16860974.txt</a></p>
+              <p><a href="bbcnews-html/world-europe-38544859.html"
+                  target="_blank" rel="noopener">bbcnews-html/world-europe-38544859.html</a></p>
+              <p><a href="bbcnews-text/world-europe-38544859.txt"
+                  target="_blank" rel="noopener">bbcnews-text/world-europe-38544859.txt</a></p>
+              <p><a href="bbcnews-html/world-europe-40683091.html"
+                  target="_blank" rel="noopener">bbcnews-html/world-europe-40683091.html</a></p>
+              <p><a href="bbcnews-text/world-europe-40683091.txt"
+                  target="_blank" rel="noopener">bbcnews-text/world-europe-40683091.txt</a></p>
+              <p><a href="bbcnews-html/world-us-canada-13188931.html"
+                  target="_blank" rel="noopener">bbcnews-html/world-us-canada-13188931.html</a></p>
+              <p><a href="bbcnews-text/world-us-canada-13188931.txt"
+                  target="_blank" rel="noopener">bbcnews-text/world-us-canada-13188931.txt</a></p>
+              <p><a href="bbcnews-html/world-us-canada-37994898.html"
+                  target="_blank" rel="noopener">bbcnews-html/world-us-canada-37994898.html</a></p>
+              <p><a href="bbcnews-text/world-us-canada-37994898.txt"
+                  target="_blank" rel="noopener">bbcnews-text/world-us-canada-37994898.txt</a></p>
+              <p><a href="bbcnews-html/world-us-canada-38019788.html"
+                  target="_blank" rel="noopener">bbcnews-html/world-us-canada-38019788.html</a></p>
+              <p><a href="bbcnews-text/world-us-canada-38019788.txt"
+                  target="_blank" rel="noopener">bbcnews-text/world-us-canada-38019788.txt</a></p>
+              <p><a href="bbcnews-html/world-us-canada-38056197.html"
+                  target="_blank" rel="noopener">bbcnews-html/world-us-canada-38056197.html</a></p>
+              <p><a href="bbcnews-text/world-us-canada-38056197.txt"
+                  target="_blank" rel="noopener">bbcnews-text/world-us-canada-38056197.txt</a></p>
+              <p><a href="bbcnews-html/world-us-canada-38536668.html"
+                  target="_blank" rel="noopener">bbcnews-html/world-us-canada-38536668.html</a></p>
+              <p><a href="bbcnews-text/world-us-canada-38536668.txt"
+                  target="_blank" rel="noopener">bbcnews-text/world-us-canada-38536668.txt</a></p>
+              <p><a href="bbcnews-html/world-us-canada-39133677.html"
+                  target="_blank" rel="noopener">bbcnews-html/world-us-canada-39133677.html</a></p>
+              <p><a href="bbcnews-text/world-us-canada-39133677.txt"
+                  target="_blank" rel="noopener">bbcnews-text/world-us-canada-39133677.txt</a></p>
+              <p><a href="bbcnews-html/world-us-canada-39157527.html"
+                  target="_blank" rel="noopener">bbcnews-html/world-us-canada-39157527.html</a></p>
+              <p><a href="bbcnews-text/world-us-canada-39157527.txt"
+                  target="_blank" rel="noopener">bbcnews-text/world-us-canada-39157527.txt</a></p>
+              <p><a href="bbcnews-html/world-us-canada-40416696.html"
+                  target="_blank" rel="noopener">bbcnews-html/world-us-canada-40416696.html</a></p>
+              <p><a href="bbcnews-text/world-us-canada-40416696.txt"
+                  target="_blank" rel="noopener">bbcnews-text/world-us-canada-40416696.txt</a></p>
+              <p><a href="bbcnews-html/world-us-canada-40448072.html"
+                  target="_blank" rel="noopener">bbcnews-html/world-us-canada-40448072.html</a></p>
+              <p><a href="bbcnews-text/world-us-canada-40448072.txt"
+                  target="_blank" rel="noopener">bbcnews-text/world-us-canada-40448072.txt</a></p>
+              <p><a href="bbcnews-html/world-us-canada-40867272.html"
+                  target="_blank" rel="noopener">bbcnews-html/world-us-canada-40867272.html</a></p>
+              <p><a href="bbcnews-text/world-us-canada-40867272.txt"
+                  target="_blank" rel="noopener">bbcnews-text/world-us-canada-40867272.txt</a></p>
+
+              <!--About Section Details END-->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--About Section END-->
+
+      <!--Facts Section START-->
+      <section id="facts">
+        <!--Section Body START-->
+
+        <!--Section Body END-->
+      </section>
+      <!--Facts Sectrion END-->
+
+      <!--Services Section START-->
+      <section id="services">
+
+      </section>
+      <!--Services Section END-->
+
+      <!--Portfolio Section START-->
+      <section id="portfolio">
+
+      </section>
+      <!--Portfolio Section END-->
+
+      <!--Testimonials START-->
+      <section id="testimonials">
+
+      </section>
+      <!--Testimonials END-->
+
+      <!--Contact Us START-->
+      <section id="contact">
+
+      </section>
+      <!--Contact Us END-->
+      <!--Footer START-->
+      <footer class="kayden-footer py-4">
+
+      </footer>
+      <!--Footer END--><!--To TOP START-->
+      <a href="#" class="toTop d-inline" id="return-to-top"><i
+          class="fas fa-chevron-up"></i></a>
+      <!--To TOP END--><!--JavaScript START-->
+      <script src="static/js/bootstrap.min.js"></script>
+      <!--JQuery-->
+      <script src="static/js/jquery.min.js"></script>
+      <!--AOS Animations-->
+      <script src="static/js/aos.js"></script>
+      <!--Jquery Easing -->
+      <script src="static/js/jquery.easing.min.js"></script>
+      <!--Jquery Appear -->
+      <script src="static/js/jquery.appear.min.js"></script>
+      <!--Kayden preloader -->
+      <script src="static/js/preloader.js"></script>
+      <!--Jquery Count To -->
+      <script src="static/js/jquery.countTo.js"></script>
+      <!--Masonry -->
+      <script src="static/js/masonry.pkgd.min.js"></script>
+      <!--Jquery Magnific Popup -->
+      <script src="static/js/jquery.magnific-popup.min.js"></script>
+      <!--OWL Carousel -->
+      <script src="static/js/owl.carousel.min.js"></script>
+      <!--Typed JS -->
+      <script src="static/js/typed.min.js"></script>
+      <!--Kayden Alert -->
+      <script src="static/js/alert.js"></script>
+      <!--Kayden Contact US -->
+      <script src="static/js/contact.js"></script>
+      <!--Kayden Custom Script -->
+      <script src="static/js/kayden.js"></script>
+      <!--JavaScript END-->
+    </body>
+
+  </html>
